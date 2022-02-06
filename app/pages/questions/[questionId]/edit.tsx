@@ -26,7 +26,6 @@ export const EditQuestion = () => {
 
       <div>
         <h1>Edit Question {question.id}</h1>
-        <pre>{JSON.stringify(question, null, 2)}</pre>
 
         <QuestionForm
           submitText="Update Question"
