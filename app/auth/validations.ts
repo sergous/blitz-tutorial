@@ -1,3 +1,4 @@
+import { CreateQuestion } from "app/questions/mutations/createQuestion"
 import { z } from "zod"
 
 export const email = z
@@ -40,3 +41,5 @@ export const ChangePassword = z.object({
   currentPassword: z.string(),
   newPassword: password,
 })
+
+export const createQuestionSchema = CreateQuestion
