@@ -73,3 +73,10 @@ model Project {
   owner     User?    @relation(fields: [userId], references: [id])
   userId    Int?
 }
+
+model Question {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  text      String
+}
